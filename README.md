@@ -1,16 +1,84 @@
-# React + Vite
+# Coding Ninjas Homepage Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fully responsive clone of the Coding Ninjas homepage built using React.js, Vite, and Tailwind CSS. This project was created to practice modern frontend development and improve UI/UX implementation skills by recreating a real-world website design.
 
-Currently, two official plugins are available:
+## 🚀 Live Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Responsive navbar
+- Hero section
+- AI advantage section
+- Course finder section
+- Industry expert marquee cards
+- Career transformation banner
+- In The News section
+- Recognition and accreditation section
+- Footer section
+- Important links section
+- Payment section
+- Smooth animations and hover effects
+- Fully responsive design
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React.js
+- Vite
+- Tailwind CSS
+- JavaScript (ES6+)
+- HTML5
+- CSS3
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ⚡ Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/YOUR_USERNAME/coding-ninjas-clone.git
+```
+
+Navigate to the project folder:
+
+```bash
+cd coding-ninjas-clone
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
+
+```bash
+npm run dev
+```
+
+## 🎯 Purpose of the Project
+
+This project was developed to:
+
+- Improve React.js skills.
+- Practice Tailwind CSS.
+- Understand responsive layouts.
+- Learn component-based architecture.
+- Replicate a real-world production website.
+
+
+## 📌 Future Improvements
+
+- Mobile menu functionality
+- Dark/light mode
+- Better animations
+- Accessibility improvements
+- Deployment on Vercel
+
+## 👩‍💻 Author
+
+Sneha Singh
+
+GitHub: https://github.com/07Sneha17
+
+---
+
+This project is created for educational purposes only. The original design belongs to Coding Ninjas.
