@@ -33,7 +33,7 @@ A fully responsive clone of the Coding Ninjas homepage built using React.js, Vit
 Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/coding-ninjas-clone.git
+git clone https://github.com/07Sneha17/coding-ninjas-clone.git
 ```
 
 Navigate to the project folder:
