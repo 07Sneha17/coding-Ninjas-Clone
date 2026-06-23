@@ -1,16 +1,9 @@
-
-import iitGuwahati from "../assets/logos/E&ICT.png";
-import iitMandi from "../assets/logos/IITMandi.webp";
-import iitmPravartak from "../assets/logos/IITPravartak.webp";
-import iitPatna from "../assets/logos/Vishleshan.webp";
 import { useRef, useState } from "react";
 
 function Navbar() {
   const [showWorking, setShowWorking] = useState(false);
   const [showCollege, setShowCollege] = useState(false);
   const [activeDomain, setActiveDomain] = useState("Data Analytics");
-  const [activeCollege, setActiveCollege] =
-  useState("Data Analytics");
 
   const closeTimer = useRef(null);
 
@@ -95,11 +88,7 @@ function Navbar() {
       <div className="space-y-1">
 
         <div className="flex gap-4 py-5 border-b border-white/10 cursor-pointer">
-          <img
-  src={iitGuwahati}
-  alt="IIT Guwahati"
-  className="w-11 h-11 rounded-xl bg-[#2a2a2a] p-1 object-contain"
-/>
+          <div className="w-11 h-11 rounded-xl bg-[#2a2a2a]" />
 
           <div>
             <p className="text-[#ff7b45] text-[15px] font-semibold">
@@ -117,11 +106,7 @@ function Navbar() {
         </div>
 
         <div className="flex gap-4 py-5 cursor-pointer">
-          <img
-  src={iitmPravartak}
-  alt="IITM Pravartak"
-  className="w-11 h-11 rounded-xl bg-[#2a2a2a] p-1 object-contain"
-/>
+          <div className="w-11 h-11 rounded-xl bg-[#2a2a2a]" />
 
           <div>
             <p className="text-[#ff7b45] text-[15px] font-semibold">
@@ -296,129 +281,11 @@ function Navbar() {
             For College Students ▼
           </button>
 
-         {showCollege && (
-  <div
-    className="absolute top-[100%] mt-2 left-1/2 -translate-x-1/2
-    w-[860px] max-w-[90vw]
-    bg-[#111111]
-    rounded-b-[28px]
-    shadow-2xl
-    z-50 overflow-hidden
-    border border-white/10"
-  >
-    <div className="grid grid-cols-[280px_1fr_1fr] min-h-[320px]">
-
-      {/* Left Column */}
-      <div className="bg-[#171717] p-5 border-r border-white/10">
-
-        <h3 className="text-white text-[22px] font-semibold mb-6">
-          Domain
-        </h3>
-
-        <div className="space-y-3">
-
-          {[
-            "Data Analytics",
-            "Software Development",
-            "Data Structures and Algorithms",
-          ].map((item) => (
-            <div
-              key={item}
-              onClick={() => setActiveCollege(item)}
-              className={`px-5 py-4 rounded-2xl flex justify-between items-center cursor-pointer
-              ${
-                activeCollege === item
-                  ? "bg-[#2b2b2b]"
-                  : "hover:bg-[#2b2b2b]"
-              }`}
-            >
-              <span className="text-white text-[16px]">
-                {item}
-              </span>
-
-              <span className="text-white text-xl">
-                ›
-              </span>
+          {showCollege && (
+            <div className="absolute top-12 left-0 bg-white text-black p-6 rounded-xl shadow-2xl w-[300px] z-50">
+              College Students Menu
             </div>
-          ))}
-
-        </div>
-      </div>
-
-      {/* Middle Column */}
-      <div className="p-5 border-r border-white/10">
-  <h3 className="text-white text-[20px] font-semibold mb-5">
-    IIT Certification
-  </h3>
-
-  <div className="flex gap-4 cursor-pointer">
-   <img
-  src={
-    activeCollege === "Data Analytics"
-      ? iitPatna
-      : iitmPravartak
-  }
-  alt="Institute Logo"
-  className="w-12 h-12 rounded-xl bg-[#2a2a2a] p-1 object-contain"
-/>
-
-    <div>
-      <p className="text-[#ff7b45] text-[15px] font-semibold">
-        {activeCollege === "Data Analytics"
-          ? "Vishlesan i-hub, IIT Patna"
-          : "IITM Pravartak, TIH IIT Madras"}
-      </p>
-
-      <h4 className="text-white text-[17px] mt-2 leading-snug">
-        {activeCollege === "Data Analytics" &&
-          "Training and Internship Certification in Data Analytics with GenAI"}
-
-        {activeCollege === "Software Development" &&
-          "Advanced Certification in Software Development with GenAI and DSA"}
-
-        {activeCollege === "Data Structures and Algorithms" &&
-          "Advanced Certification in Data Structures and Algorithms"}
-      </h4>
-
-      {activeCollege === "Data Analytics" && (
-        <span className="inline-block mt-3 px-3 py-1 rounded-full bg-[#2a2a2a] text-white text-xs">
-          Enrolment closed
-        </span>
-      )}
-    </div>
-  </div>
-</div>
-
-      {/* Right Column */}
-     <div className="p-5">
-  <h3 className="text-white text-[20px] font-semibold mb-5">
-    IIT Certification
-  </h3>
-
-  {(activeCollege === "Data Analytics") && (
-    <div className="flex gap-4 cursor-pointer">
-      <img
-  src={iitMandi}
-  alt="IIT Mandi"
-  className="w-12 h-12 rounded-xl bg-[#2a2a2a] p-1 object-contain"
-/>
-
-      <div>
-        <p className="text-[#ff7b45] text-[15px] font-semibold">
-          iHub, IIT Mandi | Coding Ninjas
-        </p>
-
-        <h4 className="text-white text-[17px] mt-2 leading-snug">
-          Advanced Certification in Data Analytics with GenAI
-        </h4>
-      </div>
-    </div>
-  )}
-</div>
-
-    </div>
-  </div>
-)}
+          )}
         </div>
       </div>
 
